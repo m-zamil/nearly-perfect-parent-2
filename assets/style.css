@@ -17,7 +17,7 @@ body {
 
 html {
   font-size: 1rem;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 400;
   color: white;
@@ -58,7 +58,7 @@ a {
 
 .wrapper {
   padding: 0 16px;
-  background-image: url("./images/bg.jpg");
+  background-image: url('./images/bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left top;
@@ -128,10 +128,10 @@ a {
   justify-content: center;
 }
 .cta--icon::before {
-  content: "";
+  content: '';
   width: 19px;
   height: 19px;
-  background-image: url("./images/google-icon.png");
+  background-image: url('./images/google-icon.png');
   background-size: cover;
   margin-right: 8px;
 }
@@ -159,11 +159,12 @@ a {
     font-size: 1.125rem;
   }
   .wrapper {
-    background-image: url("./images/bg-lg.jpg");
+    background-image: url('./images/bg-lg.jpg');
     background-position: center top;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr;
+    overflow: hidden;
   }
 
   .wrapper > * {
@@ -211,6 +212,14 @@ a {
   }
   .hero-image {
     padding-bottom: 0;
+  }
+}
+@media (min-width: 1300px) {
+  .wrapper {
+    padding: 0 5%;
+  }
+  .hero-image img {
+    right: calc(-41px - 5%);
   }
 }
 
